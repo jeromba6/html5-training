@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div en span</title>
+    <style>
+        /*Body margin op nul zetten, om te voorkomen dat je witranden ziet*/
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+
+        /*Een koptekstgebied met logo, menu, enzovoort. Altijd 80px hoog*/
+        .header {
+            background-color: #e0d8e2;
+            color: #508350;
+            height: 80px;
+            width: 100%;
+        }
+
+        /*De inhoud van de pagina komt in een 'container'. Deze krijgt links en rechts witruimte*/
+        .container {
+            margin-top: 0;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        /*Gewone alineatekst*/
+        .bodyText {
+            font-family: Verdana, sans-serif;
+            font-size: 12px;
+        }
+
+        /*Tekst in een regel (<span>) met deze klasse. Ze krijgt een andere opmaak dan de rest van de regel */
+        .nadruk {
+            font-size: 24px;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="img/KPN-Logo.png" alt="KPN logo" class="logo">
+    Welkom bij ons bedrijf
+    <nav>
+        ...menu...
+    </nav>
+</div>
+<div class="container">
+<!--    Eerste div - Groeperen van tekst-->
+    <div class="bodyText">
+        <h2>Dit is de eerste alinea</h2>
+        <p>De volgende regels worden met een break van elkaar gescheiden...</p>
+        Lorem ipsum dolor sit amet, <p>consectetur adipisicing elit.</p>
+        <!--        Hier staat een <span></span>. De tekst loopt door binnen de regel -->
+        <span class="nadruk">
+            <a href="http://www.wikipedia.nl">Wikipedia.nl</a>.
+            Accusanium assumenda atque consequatur
+            cumque deleniti dolor dolores ex.
+        </span> Exercitationem labore maiores natus quas quidem quisquam, repellendus repudiandae sint tempore ut
+        voluptatem!
+    </div>
+    <!--    Tweede div - Groeperen van tekst-->
+    <div class="bodyText">
+        <h2>
+            Dit is een nieuwe koptekst. Hij geeft het begin van een nieuwe pagina aan.
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem, earum? Consequuntur dolor doloribus
+            eaque
+            fugiat hic impedit inventore iure laborum, maiores nam, necessitatibus nobis quia quidem suscipit vitae!
+            Odio!
+        </p>
+    </div>
+</div>
+</body>
+</html>
