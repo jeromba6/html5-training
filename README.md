@@ -14,3 +14,5 @@ Handige links die tijdens de training zijn besproken
 - CSS library Bootstrap: https://getbootstrap.com/ (Grid + Components)
 - Lettertypen bij Font Squirrel: https://www.fontsquirrel.com/
 - Lettertypen bij Google Fonts: https://fonts.google.com/
+- Website publiceren bij Netlify (gratis plan beschikbaar): https://www.netlify.com/
+
