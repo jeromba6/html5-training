@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulieren</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<h2>Formulieren</h2>
+<form action="https://formspree.io/info@kassenaar.com" method="post">
+    <p>
+        <label for="voornaam">
+            Voornaam:
+        </label>
+        <input type="text" id="voornaam" name="voornaam" required>
+    </p>
+    <p>
+        <label for="leeftijd">Leeftijd</label>
+        <input type="number" min="18" max="99" id="leeftijd" name="leeftijd">
+    </p>
+    <h3>Wat vind je lekker?</h3>
+    <p>
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" id="pizza" name="pizza">
+    </p>
+    <p>
+        <label for="chinees">Chinees</label>
+        <input type="checkbox" id="chinees" name="chinees">
+    </p>
+    <h3>Nationaliteit?</h3>
+    <p>
+        <label for="NL">NL</label>
+        <input type="radio" id="NL" required name="nationaliteit">
+    </p>
+    <p>
+        <label for="BE">BE</label>
+        <input type="radio" id="BE" name="nationaliteit">
+    </p>
+    <p>
+        <label for="CH">Chinees</label>
+        <input type="radio" id="CH" name="nationaliteit">
+    </p>
+    <p>
+        <label for="Other">Overig</label>
+        <input type="radio" id="Other" name="nationaliteit">
+    </p>
+    <h3>Provincie?</h3>
+    <label for="selectProvincie">Uw provincie</label>
+    <select class="form-control" name="selectProvincie"
+            id="selectProvincie">
+        <option value="-1">
+            Maak een keuze
+        </option>
+        <option value="GR">Groningen</option>
+        <option value="FR">Friesland</option>
+        <option value="DR">Drente</option>
+        <option value="OV">Overijssel</option>
+        <option value="Overing">Overig</option>
+    </select>
+
+    <hr>
+    <input type="submit" name="submit" id="submit" value="Verzenden">
+</form>
+</body>
+</html>

@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <title>Welkom in Nieuwegein</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @media screen and (max-width: 480px) {
+            body{
+                background-color: orangered;
+            }
+            .puppy {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 480px) {
+            body{
+                background-color: greenyellow;
+            }
+            .puppy {
+                width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -14,6 +33,7 @@
             <li><a href="lijsten.html">Lijsten</a></li>
             <li><a href="div-en-span.html">Div en Span</a></li>
             <li><a href="lettertypen.html">Lettertypen</a></li>
+            <li><a href="formulieren.html">Formulieren</a></li>
         </ul>
 
     </nav>
@@ -22,8 +42,7 @@
     <h1>Welkom in Nieuwegein</h1>
     <h2>We zijn GOED bezig met de cursus HTML5</h2>
     <p>Dit is de eerste tekst. Hij staat in een alinea-tag.</p>
-    <img src="img/puppy.jpg" alt="Plaatje van een puppy"
-         width="100"
+    <img class="puppy" src="img/puppy.jpg" alt="Plaatje van een puppy"
          title="Plaatje van een puppy">
 
     <h2>Link naar Nederlandse spoorwegen</h2>
